@@ -1,0 +1,19 @@
+name: DomainSecurity
+version: 1.0.0
+main: top.example.security.DomainSecurity
+api-version: 1.21
+description: Minecraft服务器域名安全校验插件
+author: Example
+website: https://example.com
+
+commands:
+  domainsecurity:
+    description: DomainSecurity插件管理命令
+    usage: /domainsecurity [reload|export|blacklist|unban]
+    permission: domainsecurity.admin
+    permission-message: §c你没有权限执行此命令
+
+permissions:
+  domainsecurity.admin:
+    description: 允许管理DomainSecurity插件
+    default: op
